@@ -10,11 +10,12 @@ import lombok.ToString;
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
-@Table(name="roles")
+@Table(name = "roles")
 public class Role {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name="role_id")
+    @Column(name = "role_id")
     private Integer roleId;
 
     @ToString.Exclude
